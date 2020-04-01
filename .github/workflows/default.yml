@@ -1,0 +1,22 @@
+name: Default
+
+on: [push]
+
+jobs:
+  tests:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Cache npm dependencies
+        uses: actions/cache@v1
+        with:
+          path: vendor
+          key: npm-${{ hashFiles('package-lock.json') }}
+
+      - name: Run npm install
+        run: npm install
+
+      - name: Run tests
+        run: npm t

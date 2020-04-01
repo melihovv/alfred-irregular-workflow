@@ -4,11 +4,17 @@
   "description": "Alfred workflow for English irregular verbs",
   "main": "index.js",
   "dependencies": {
-    "alfy": "^0.9.1"
+    "alfy": "^0.9.1",
+    "irverbs": "^1.0.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "alfy-test": "^0.4.0",
+    "ava": "^3.5.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
   },
   "repository": {
     "type": "git",
