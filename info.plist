@@ -23,7 +23,7 @@
 	<key>createdby</key>
 	<string>Alexandr Melihovv</string>
 	<key>description</key>
-	<string>Show irregular verb forms</string>
+	<string>Show forms of English irregular verbs</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -116,6 +116,10 @@
 			<integer>245</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/melihovv/alfred-irregular-workflow</string>
 </dict>
