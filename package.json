@@ -4,12 +4,12 @@
   "description": "Alfred workflow to show forms of English irregular verbs",
   "main": "index.js",
   "dependencies": {
-    "alfy": "^0.10.0",
+    "alfy": "^1.1.0",
     "irverbs": "^1.0.6"
   },
   "devDependencies": {
     "alfy-test": "^0.4.0",
-    "ava": "^3.5.2"
+    "ava": "^5.2.0"
   },
   "scripts": {
     "test": "ava",
